@@ -1,0 +1,25 @@
+{
+  "name": "pi-repoprompt",
+  "version": "0.1.0",
+  "description": "Pi extension that bridges to RepoPrompt through rp-cli.",
+  "type": "module",
+  "main": "./src/index.ts",
+  "pi": { "extensions": ["./src/index.ts"] },
+  "scripts": {
+    "test": "node --import tsx --test test/*.test.ts test/*.test.mjs",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "typebox": "*"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "^0.79.1",
+    "typebox": "^1.2.11",
+    "typescript": "^5.6.0",
+    "tsx": "^4.20.0",
+    "@types/node": "^24.0.0"
+  },
+  "engines": { "node": ">=20" },
+  "license": "MIT"
+}
