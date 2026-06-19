@@ -11,7 +11,7 @@
 ## Install / load
 
 ```text
-pi install github:<owner>/pi-repoprompt
+pi install github:erayack/pi-repoprompt
 ```
 
 For local development:
@@ -20,7 +20,7 @@ For local development:
 pi -e ./pi-repoprompt
 ```
 
-## MVP flow
+## Flow
 
 ```text
 /rp windows
@@ -45,9 +45,9 @@ The extension exposes RepoPrompt-backed model tools with an `rp_` prefix to avoi
 
 `rp_` tools operate on the bound RepoPrompt workspace. Pi native tools operate on Pi's current working directory. RepoPrompt selection/context is separate from Pi conversation context.
 
-## Non-goals for MVP
+## Non-goals
 
-This MVP does not reimplement RepoPrompt file trees, selected-file state, codemaps, prompt packaging, context builder internals, Oracle/chat workflows, or the RepoPrompt MCP server. It does not include V2/V3 workflows, TUI pickers, or native MCP transport.
+This extension does not reimplement RepoPrompt file trees, selected-file state, codemaps, prompt packaging, context builder internals, Oracle/chat workflows, or the RepoPrompt MCP server. It does not include V2/V3 workflows, TUI pickers, or native MCP transport.
 
 ## Development
 
@@ -55,11 +55,3 @@ This MVP does not reimplement RepoPrompt file trees, selected-file state, codema
 npm test
 npm run typecheck
 ```
-
-When runtime/buildability is affected in this repository, also run:
-
-```bash
-xcodebuild -project RepoPrompt.xcodeproj -scheme RepoPrompt -configuration Debug build
-```
-
-See `docs/troubleshooting.md` for common failure modes.
