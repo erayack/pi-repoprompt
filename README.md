@@ -6,7 +6,8 @@
 
 - RepoPrompt app installed and running.
 - RepoPrompt MCP/CLI installed and available as `rp-cli` on `PATH`.
-- A RepoPrompt window explicitly bound before workspace-scoped commands or tools are used.
+- Pi does not have built-in MCP support. If you haven't already installed MCP support for Pi, install [pi-mcp-adapter](https://github.com/nicobailon/pi-mcp-adapter).
+- A RepoPrompt window must be explicitly bound before workspace-scoped commands or tools are used.
 
 ## Install / load
 
